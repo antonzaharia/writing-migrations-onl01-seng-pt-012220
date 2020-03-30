@@ -1,6 +1,7 @@
 class ChangeDatatypeForBirthdate < ActiveRecord::Migration[5.2]
   def change 
     change_column :students do |s|
-      s.birthdate
+      s.birthdate :birthdate, :datetime
+    end
   end
 end
